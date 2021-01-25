@@ -4,6 +4,7 @@ import query from "./Query";
 
 function App() {
   let [userName, setUserName] = useState("");
+  let [repoList, setRepoList] = useState(null);
 
   const fetchData = useCallback(() => {
     fetch(github.baseURL, {
@@ -13,8 +14,9 @@ function App() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setUserName(data.data.viewer.name);
-        console.log(data);
+        const viewer = data.data.viewer;
+        setUserName(viewer.name);
+        setRepoList(viewer.repositories.nodes);
       })
       .catch((err) => {
         console.log(err);
@@ -31,6 +33,19 @@ function App() {
         <i className="bi bi-diagram-2-fill"></i> Repos
       </h1>
       <p>Hey there {userName}</p>
+
+      {repoList && (
+        <ul className="list-group list-group-flush">
+          {repoList.map((repo) => (
+            <li className="list-group-item" key={repo.id.toString()}>
+              <a className="h5 mb-0 text-decoration-none" href={repo.url}>
+                {repo.name}
+              </a>
+              <p className="small">{repo.description}</p>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
