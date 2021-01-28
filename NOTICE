@@ -7,19 +7,23 @@ See LICENSE in the project root for license information.
 ATTRIBUTIONS:
 
 Bootstrap
-https://getbootstrap.com
-Copyright (c) 2021
+https://github.com/twbs/bootstrap
+Copyright (c) 2011-2021 Twitter, Inc.
+Copyright (c) 2011-2021 The Bootstrap Authors
 License: MIT
+https://opensource.org/licenses/MIT
 
 Bootstrap Icons
-https://icons.getbootstrap.com/
-Copyright (c) 2021
+https://github.com/twbs/icons
+Copyright (c) 2019-2020 The Bootstrap Authors
 License: MIT
+https://opensource.org/licenses/MIT
 
 React
-https://reactjs.org/
-Copyright (c) 2021
+https://github.com/facebook/react
+Copyright (c) Facebook, Inc. and its affiliates.
 License: MIT
+https://opensource.org/licenses/MIT
 
 
 Please note, this project may automatically load third party code from external 
@@ -32,8 +36,6 @@ additional dependencies.
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 MIT License
-
-Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
